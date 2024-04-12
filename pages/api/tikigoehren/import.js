@@ -3,8 +3,8 @@
 const eBay = require("ebay-node-api");
 
 let ebay = new eBay({
-	clientID: "UweHorn-TikiShop-PRD-01c6fefd9-8c8c4fb7",
-	clientSecret: "PRD-1c6fefd90bec-3b08-44b7-a3dd-f70e",
+	appId: process.env.EBAY_CLIENT_ID,
+	certId: process.env.EBAY_CLIENT_SECRET,
 	env: "PRODUCTION",
 	headers: {
 		"X-EBAY-C-MARKETPLACE-ID": "EBAY_DE",

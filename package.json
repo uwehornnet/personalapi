@@ -9,8 +9,12 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"ebay-api": "^8.7.1",
 		"ebay-node-api": "^2.9.0",
+		"googleapis": "^134.0.0",
+		"jose": "^5.2.4",
 		"next": "13.2.3",
+		"node-xlsx": "^0.23.0",
 		"react": "18.2.0",
 		"react-dom": "18.2.0"
 	},
