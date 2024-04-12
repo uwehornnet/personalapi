@@ -11,7 +11,7 @@ export async function middleware(request) {
 	res.headers.append("Access-Control-Allow-Methods", "GET,DELETE,PATCH,POST,PUT");
 	res.headers.append(
 		"Access-Control-Allow-Headers",
-		"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version"
+		"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version, Authorization"
 	);
 
 	const auth = await request.headers.get("authorization");
